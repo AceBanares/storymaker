@@ -1,2 +1,186 @@
 @charset "utf-8";
 /* Assignment 1 | COMP1073 Client-Side JavaScript */
+
+/* Set overall font and background */
+body {
+    /* float: left; */
+    background: black url('../img/bg_portrait.jpg') no-repeat top left;
+    background-size: cover;
+    font: normal 500 18px/1.5 "Century Gothic", Tahoma, Verdana, sans-serif;
+    opacity: 0.95;
+    margin-bottom: 10%;
+}
+
+/* Heading 1 */
+h1 {
+    font-weight: 900;
+    font-size: 2.2em;
+    letter-spacing: 0.06em;
+    word-spacing: 0.06em;
+}
+
+/* Heading 2 */
+h2 {
+    font-weight: 700;
+    font-size: 2.0em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+}
+
+/* Heading 3 */
+h3 {
+    font-weight: 500;
+    font-size: 1.8em;
+    letter-spacing: 0.04em;
+    word-spacing: 0.04em;
+}
+
+/* Heading 4 */
+h4 {
+    font-weight: 300;
+    font-size: 1.6em;
+    letter-spacing: 0.03em;
+    word-spacing: 0.03em;
+}
+
+/* Heading 5 */
+h5 {
+    font-weight: 200;
+    font-size: 1.4em;
+    letter-spacing: 0.02em;
+    word-spacing: 0.02em;
+}
+
+/* Heading 6 */
+h6 {
+    font-weight: 100;
+    font-size: 1.2em;
+    letter-spacing: 0.01em;
+    word-spacing: 0.01em;
+}
+
+/* Set paragraphs */
+p {
+    border: 5px solid salmon;
+    /* width: 96%; */
+    /* margin: 1%; */
+    padding: 1%;
+    background-color: floralwhite;
+    text-align: center;
+}
+
+/* Set phrasing elements */
+em {
+    font-style: italic;
+    color: rebeccapurple;
+}
+  
+strong {
+    font-weight: bold;
+    color: navy;
+}
+
+dfn {
+    text-decoration: underline;
+    color: darkmagenta
+}
+
+/* Set header, main, footer, and aside */
+
+/* Uses text shadow to create text outline */
+header { 
+    text-shadow:
+        -1px -1px 0 lime,
+        1px -1px 0 lime,
+        -1px 1px 0 lime,
+        1px 1px 0 lime;
+    /* background: lightblue url('../img/bg_landscape.jpg') no-repeat top left;
+    background-size: cover; */
+    background-color: lightyellow;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main {
+    padding: 3%;
+    background-color: lightgreen;
+}
+
+footer {
+    text-align: center;
+    padding: 3%;
+    background-color: lightblue;
+}
+
+/* Some animations, hover, and link effects */
+
+@keyframes move {
+    from {
+        background-position: top left;
+    }
+    to {
+        background-position: bottom left;       
+    }
+}
+
+
+body:hover {
+    animation: move 20s ease-in-out infinite alternate;
+}
+
+p:hover {
+    background-color: azure;
+    border: 5px double dodgerblue;
+}
+
+/* Change media settings based on window size */
+
+@media (max-width: 512px) {
+	body {
+        font: 70%/1.4 "Lucida Sans", Helvetica, Arial, sans-serif;
+    }
+    #container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 513px) and (max-width: 768px) {
+	body {
+        font: 80%/1.4 "Lucida Sans", Helvetica, Arial, sans-serif;
+    }
+    #container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	body {
+        font: 90%/1.4 "Lucida Sans", Helvetica, Arial, sans-serif;
+    }
+    #container {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1025px) {
+	body {
+        font: 100%/1.4 "Lucida Sans", Helvetica, Arial, sans-serif;
+    }
+    #container {
+        width: 80%;
+    }
+}
+
+/* Container setup */
+
+#container {
+    margin: 0 auto;
+}
+
+.container {
+    padding: 10%;
+}

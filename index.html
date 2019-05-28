@@ -5,17 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" media="screen" />
   </head>
 
   <body>
-    <button id='idWord1'>1st word</button>
-    <button id='idWord2'>2nd word</button>
-    <button id='idWord3'>3rd word</button>
-    <button id='idWord4'>4th word</button>
-    <button id='idWord5'>5th word</button>
-	<button id='tellMyStory'>Tell the Story</button>
-	<button id='randomStory'>A Random Story</button>
+    <div class="container">
+      <header>
+        <h4 id="txtStory">This is where your story goes...</h4>
+      </header>
+      <main>
+        <p>
+          <strong
+            ><em
+              >Directions: Click one of the blue buttons to narrate your custom
+              story or a random one. Click on the gray buttons to customize the
+              wordings. Have fun!</em
+            ></strong
+          >
+        </p>
+        <button class="btn btn-primary btn-lg btn-block" id="randomStory">
+          A Random Story
+        </button>
+        <button class="btn btn-secondary btn-lg btn-block" id="idWord1">
+          1st word
+        </button>
+        <button class="btn btn-secondary btn-lg btn-block" id="idWord2">
+          2nd word
+        </button>
+        <button class="btn btn-secondary btn-lg btn-block" id="idWord3">
+          3rd word
+        </button>
+        <button class="btn btn-secondary btn-lg btn-block" id="idWord4">
+          4th word
+        </button>
+        <button class="btn btn-secondary btn-lg btn-block" id="idWord5">
+          5th word
+        </button>
+        <button class="btn btn-primary btn-lg btn-block" id="tellMyStory">
+          Tell the Story
+        </button>
+      </main>
+      <footer>
+        <small>Copyright belongs to Ace Greggore Banares.</small>
+      </footer>
+    </div>
     <script src="js/app.js"></script>
   </body>
 </html>
